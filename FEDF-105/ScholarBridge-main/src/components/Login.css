@@ -1,0 +1,178 @@
+/* Container: Center content with smooth gradient background */
+.login-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #e3e8f9 65%, #f9fbff 100%);
+}
+
+/* App title above card, centered and distinct */
+.app-title {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: 1.2px;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Card container with subtle shadow and rounded corners */
+.login-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(43, 52, 69, 0.15);
+  padding: 60px 64px;
+  width: 460px;
+  max-width: 96vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Card header styling for login title */
+.login-card h2 {
+  font-size: 2.4em;
+  font-weight: 800;
+  margin-bottom: 36px;
+  letter-spacing: 1.4px;
+  color: #355bc4;
+  text-align: center;
+}
+
+/* Form with full width */
+.login-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels with elegant spacing */
+.login-card label {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f141b;
+  margin-left: 4px;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+/* Inputs and selects: unified style with larger size and subtle shadows */
+.login-card input,
+.login-card select {
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: none;
+  margin-bottom: 26px;
+  font-size: 1.2em;
+  background: #e9efff;
+  outline: none;
+  box-shadow: 0 6px 16px rgba(57, 93, 218, 0.3);
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus styling with soft blue background and stronger shadow */
+.login-card input:focus,
+.login-card select:focus {
+  background: #d1dbff;
+  box-shadow: 0 8px 28px rgba(57, 93, 218, 0.5);
+}
+
+/* Primary submit button styling */
+.login-card button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  color: #fff;
+  font-size: 1.22em;
+  padding: 16px 0;
+  margin-top: 8px;
+  border-radius: 13px;
+  border: none;
+  font-weight: 800;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+  cursor: pointer;
+  letter-spacing: 0.09em;
+  transition: background 0.23s, transform 0.20s, box-shadow 0.22s;
+}
+
+/* Submit button hover effect */
+.login-card button[type="submit"]:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 14px 44px rgba(37, 99, 235, 0.25);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Error message styling */
+.login-card .error-message {
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+  padding: 14px 12px;
+  border-radius: 12px;
+  margin: 22px 0 28px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  border: 1.5px solid #fca5a5;
+}
+
+/* Paragraph text near bottom */
+.login-card p {
+  font-size: 1.05em;
+  margin-top: 26px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Buttons styled as links */
+.login-card button:not([type="submit"]) {
+  background: none;
+  color: #3b82f6;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 0 6px;
+  letter-spacing: 0.12em;
+  transition: opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+/* Hover effect for link buttons */
+.login-card button:not([type="submit"]):hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 520px) {
+  .login-card {
+    width: 98vw;
+    padding: 36px 18px;
+  }
+
+  .app-title {
+    top: 36px;
+    font-size: 2em;
+  }
+
+  .login-card h2 {
+    font-size: 1.6em;
+    margin-bottom: 24px;
+  }
+
+  .login-card input,
+  .login-card select {
+    padding: 16px 14px;
+    font-size: 1em;
+  }
+}

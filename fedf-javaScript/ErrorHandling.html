@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Error Handling Demo</title>
+</head>
+<body>
+    <h1>Error Handling Demo</h1>
+    <script>
+        try{
+            let x=10/0;
+            console.log(x);
+            throw new Error("/by zero is error")
+        }
+        catch(err)
+        {
+            console.error("catch the error message:"+err.message);
+        }
+        finally
+        {
+            console.log("it will execute any time");
+        }
+    </script>
+</body>
+</html>

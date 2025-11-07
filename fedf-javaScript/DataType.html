@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types in js</title>
+</head>
+<body>
+    <h1>
+        Data Type demo in JavaScript
+    </h1>
+    <pre id="demo"></pre>
+
+    <script>
+        const a1 = 12;
+         const a2 = "Ramu";
+          const a3 = true;
+        let  a4;
+            const a5 = null;
+            const a6 = 9959885650n ;
+            const a7 =Symbol("id");
+
+             
+              document.getElementById("demo").innerHTML=`
+              num=${a1}
+              string=${a2}
+              boolean=${a3}
+              undefined=${a4}
+              nothing-null=${a5}
+              bigint=${a6}
+              symbol=${a7.toString}`;
+
+    </script>
+</body>
+</html>

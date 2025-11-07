@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements Demo</title>
+</head>
+<body>
+    <h1>
+        Control statemens Demo using js
+    </h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let x;
+        
+        let n1=parseInt(prompt("enter x value"));
+        
+        document.getElementById("demo").innerHTML="First Element:"+n1+"<br/>";
+ 
+        if(n1 == 1)
+         {
+              document.getElementById("demo").innerHTML+="Monday:<br/>";
+         }
+         else if(n1 == 2)
+         {
+              document.getElementById("demo").innerHTML+="Tuesday:<br/>";
+         }
+         else if(n1 == 3)
+         {
+              document.getElementById("demo").innerHTML+="WednesDay:<br/>";
+         }
+         else if(n1 == 4)
+         {
+              document.getElementById("demo").innerHTML+="Thursday:<br/>";
+         }else if(n1 == 5)
+         {
+              document.getElementById("demo").innerHTML+="Friday:<br/>";
+         }else if(n1 == 6)
+         {
+              document.getElementById("demo").innerHTML+="Saturday:<br/>";
+         }else if(n1 == 0)
+         {
+              document.getElementById("demo").innerHTML+="sunday:<br/>";
+         }
+         else{
+                document.getElementById("demo").innerHTML+="Invalid day number:<br/>";
+         }
+
+    </script>
+</body>
+</html>

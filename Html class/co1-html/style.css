@@ -1,0 +1,16 @@
+
+        body{ 
+            background-color: darkgray;
+             font-size: 20px;
+        }
+        div{
+            background-color:darkseagreen;
+            font-style: italic;
+            display:block;
+            padding:10px;
+            margin: 10px;
+        }
+        h1{
+            color: blue;
+           
+        }
